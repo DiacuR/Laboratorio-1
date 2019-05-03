@@ -17,6 +17,15 @@ int main()
 
     eProducto unProducto;
     eProducto listadoProductos[T];
+
+    eProveedor listaDeProveedores[3];
+    eProveedor unProveedor;
+    mostrarArrayProductosConProveedores (listadoProductos,  10 ,  listaDeProveedores, 3);
+
+
+    //eProducto listadoDeProductos[3];
+
+
     construirArray(listadoProductos,T);
     inicializarProductos(listadoProductos,T);
     mostrarArray(listadoProductos,T);

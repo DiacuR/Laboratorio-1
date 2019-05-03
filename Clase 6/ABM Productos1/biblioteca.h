@@ -50,6 +50,11 @@ int editarProducto(eProducto [], int );
 
 void hardCodearProductos(eProducto[], eProveedor[], int);
 
-void mostrarProveedores(eProveedor);
+void mostrarProveedor(eProveedor);
 
-void mostrarArrayProductosConProveedor(eProveedor[] ,int, eProducto[], int);
+void mostrarArrayProductosConProveedores(eProveedor[] ,int, eProducto[], int);
+void mostrarArrayProveedoresConProductos(eProveedor[],int, eProducto[], int);
+
+void mostrarProveedores (eProveedor[], int);
+void mostrarArrayProductosConProveedoresElMaximo(eProducto[], int ,eProveedor[], int);
+void mostrarArrayProductosConProveedorOrdenado(eProducto[],int, eProveedor[],int, int Desc);

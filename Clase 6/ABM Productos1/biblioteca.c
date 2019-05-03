@@ -210,8 +210,8 @@ void inicializarProductos(eProducto listaProductos[],int tam)
     float precio[10]= {42,42,44,41,42,35,36,37,38};
 
     char nombre[10][50]= {"infinia","axion power","vpower","infinia disel","axion disel","vpower disel",
-                         "super","axion super","normal","kerosene"
-                        };
+                          "super","axion super","normal","kerosene"
+                         };
 
     int idProveedor[10] = {1,2,3,1,2,3,1,2,3,1};
     char codigoDeBarra[10][13]= {"122","222","322","422","522","622","722","822","922","962"};
@@ -239,7 +239,7 @@ void hardCodearProductos(eProducto listaProductos[],eProveedor listaProveedores[
 
 }
 
-void mostrarArrayProductosConProveedor(eProveedor listaProveedor[],int tamProv, eProducto listaProductos[], int tamProd)
+void mostrarArrayProductosConProveedores(eProveedor listaProveedor[],int tamProv, eProducto listaProductos[], int tamProd)
 {
     int i, j;
 
@@ -252,7 +252,7 @@ void mostrarArrayProductosConProveedor(eProveedor listaProveedor[],int tamProv, 
 
             if(listaProductos[i].idProveedor == listaProveedor[j].id )
             {
-                mostrarProveedores(listaProveedor[j]);
+                mostrarProveedor(listaProveedor[j]);
             }
 
 
@@ -267,7 +267,7 @@ void mostrarArrayProveedoresConProductos(eProveedor listaProveedor[],int tamProv
 
     for(i = 0; i < tamProv; i++)
     {
-        mostrarProveedores(listaProveedor[i]);
+        mostrarProveedor(listaProveedor[i]);
 
         for(j = 0; j < tamProd; j++)
         {
@@ -284,7 +284,20 @@ void mostrarArrayProveedoresConProductos(eProveedor listaProveedor[],int tamProv
 }
 
 
-void mostrarProveedores(eProveedor unProveedor)
+void mostrarProveedor(eProveedor unProveedor)
 {
-    printf("%15d %15s %10s %10s %10s \n", unProveedor.cuit , unProveedor.descripcion, unProveedor.duenio, unProveedor.id, unProveedor.localidad);
+    printf("%15d %15s %10s %10s %10s \n", unProveedor.cuit, unProveedor.descripcion, unProveedor.duenio, unProveedor.id, unProveedor.localidad);
+}
+
+void mostrarProveedores (eProveedor listado[], int tam)
+{
+    int i;
+    for(i=0; i<tam; i++)
+    {
+
+        mostrarProveedor(listado[i]);
+
+
+
+    }
 }
