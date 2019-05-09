@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1557393487 source:c:\users\diacu\desktop\funcionesaux\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesAux.h"
+
+1557392490 c:\users\diacu\desktop\funcionesaux\funcionesaux.h
+
+1557393650 source:c:\users\diacu\desktop\funcionesaux\funcionesaux.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesAux.h"
+	"string.h"
+
