@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1557994069 source:c:\users\alumno\desktop\laboratorio_1_10\alumno.c
+	<stdio.h>
+	<stdlib.h>
+	"alumno.h"
+
+1557998894 source:c:\users\alumno\desktop\laboratorio_1_10\main.c
+	<stdio.h>
+	<stdlib.h>
+	"alumno.h"
+	<string.h>
+
+1558000998 c:\users\alumno\desktop\laboratorio_1_10\alumno.h
+
